@@ -19,7 +19,7 @@ modtime = 1449179233.272512000
 [views/index]
 owner = dgreenwood
 version = 6.3.0
-modtime = 1449238915.283559000
+modtime = 1449266890.577099000
 
 [indexes/shooting_tracker_master]
 owner = dgreenwood
@@ -101,7 +101,7 @@ access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 6.3.0
-modtime = 1449222014.937386000
+modtime = 1449264322.592612000
 
 [props/csv-shooting_tracker/EXTRACT-city]
 access = read : [ * ], write : [ admin ]
@@ -126,3 +126,8 @@ modtime = 1449237768.284369000
 owner = admin
 version = 6.3.0
 modtime = 1449239701.502226000
+
+[views/mother_jones]
+owner = admin
+version = 6.3.0
+modtime = 1449264409.514740000

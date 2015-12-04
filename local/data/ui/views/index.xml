@@ -5,7 +5,7 @@
     <panel>
       <single>
         <search>
-          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2013" | addcoltotals</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | timechart sum(killed) AS "No. People Killed in 2013" | addcoltotals</query>
           <earliest>1356998401</earliest>
           <latest>1388534340</latest>
         </search>
@@ -52,7 +52,7 @@
     <panel>
       <single>
         <search>
-          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2014" | addcoltotals</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | timechart sum(killed) AS "No. People Killed in 2014" | addcoltotals</query>
           <earliest>1388534401</earliest>
           <latest>1420070340</latest>
         </search>
@@ -99,7 +99,7 @@
     <panel>
       <single>
         <search>
-          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2015" | addcoltotals</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | timechart sum(killed) AS "No. People Killed in 2015" | addcoltotals</query>
           <earliest>1420070401</earliest>
           <latest>1451606340</latest>
         </search>
@@ -146,7 +146,7 @@
     <panel>
       <single>
         <search>
-          <query>index=shooting_tracker_master | timechart span=1d sum(killed) AS "No. People Killed"</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | timechart span=1d sum(killed) AS "No. People Killed"</query>
           <earliest>-7d@h</earliest>
           <latest>now</latest>
         </search>
@@ -222,7 +222,7 @@
       </input>
       <map>
         <search>
-          <query>index=shooting_tracker_master | eval total_involved=wounded+killed | stats $outcomeToken0$ AS "People Killed" by state_long | geom geo_us_states featureIdField="state_long"</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | eval total_involved=wounded+killed | stats $outcomeToken0$ AS "People Killed" by state_long | geom geo_us_states featureIdField="state_long"</query>
           <earliest>$timeToken1.earliest$</earliest>
           <latest>$timeToken1.latest$</latest>
         </search>
@@ -254,14 +254,25 @@
   <row>
     <panel>
       <title>Data Explorer</title>
-      <input type="dropdown" token="stateToken0" searchWhenChanged="true">
+      <input type="dropdown" token="stateExplorerToken0" searchWhenChanged="true">
         <label></label>
-        <choice value="*">All</choice>
+        <choice value="*">State</choice>
         <search>
-          <query>index=shooting_tracker_master sourcetype="csv-shooting_tracker" | dedup state | fields state</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | dedup state | fields state</query>
         </search>
         <fieldForLabel>state</fieldForLabel>
         <fieldForValue>state</fieldForValue>
+        <default>*</default>
+        <initialValue>*</initialValue>
+      </input>
+      <input type="dropdown" token="cityExplorerToken0" searchWhenChanged="true">
+        <label></label>
+        <choice value="*">City</choice>
+        <search>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" state=$stateExplorerToken0$ | dedup city | fields city</query>
+        </search>
+        <fieldForLabel>city</fieldForLabel>
+        <fieldForValue>city</fieldForValue>
         <default>*</default>
         <initialValue>*</initialValue>
       </input>
@@ -274,7 +285,7 @@
       </input>
       <table>
         <search>
-          <query>index=shooting_tracker_master sourcetype="csv-shooting_tracker" state=$stateToken0$ | eval "Name of Shooter(s)"="Name Hidden", Date=strftime(_time, "%d/%m/%Y")  | stats sum(killed) AS "People Killed" sum(wounded) AS "People Wounded" by "Name of Shooter(s)", date, state_long, Date, city | rename state_long AS State, city AS City | table Date, State, City "Name of Shooter(s)", "People Killed", "People Wounded" | sort -"People Killed"</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" state=$stateExplorerToken0$ city=$cityExplorerToken0$ | eval "Name of Shooter(s)"="Name Hidden", Date=strftime(_time, "%d/%m/%Y"), Article="Link to Article"  | stats sum(killed) AS "People Killed" sum(wounded) AS "People Wounded" by "Name of Shooter(s)", date, state_long, Date, city, Article, article1 | rename state_long AS State, city AS City | table Date, State, City "Name of Shooter(s)", "People Killed", "People Wounded", "Article" | sort -"People Killed"</query>
           <earliest>$timeToken2.earliest$</earliest>
           <latest>$timeToken2.latest$</latest>
         </search>
@@ -283,6 +294,11 @@
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">cell</option>
         <option name="count">10</option>
+        <drilldown>
+          <link>
+            <![CDATA[ $row.article1$ ]]>
+          </link>
+        </drilldown>
       </table>
     </panel>
   </row>
@@ -290,7 +306,7 @@
   <row>
     <panel>
 <search id="basesearch">
-    <query>index=shooting_tracker_master | timechart span=1d count(killings)</query>
+    <query>index=s4g-shootings sourcetype="csv-shooting_tracker" | timechart span=1d count(killings)</query>
     <earliest>0</earliest>
     <latest>now</latest>
   </search>

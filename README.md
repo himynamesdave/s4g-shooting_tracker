@@ -27,3 +27,4 @@ As with all scientific analyses, the sample collection methodology is very impor
 * [The National Enquirer](http://www.nationaljournal.com/s/53345/states-with-most-gun-laws-see-fewest-gun-related-deaths) - gun deaths, gun control laws [2013]
 * [Wikipedia](https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population) - population [2013]
 * [Simple Maps](http://simplemaps.com/resources/us-cities-data) - cities location (lat, lon) 
+* [Kaiser Family Foundation](http://kff.org/other/state-indicator/median-annual-income/#) - median state household income
