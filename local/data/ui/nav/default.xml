@@ -1,0 +1,9 @@
+<nav search_view="search" color="#e53f3d">
+  <view name="index" default='true' />
+  <view name="gun_control" />
+  <collection label="About">
+    <a href="http://shootingtracker.com/" target="_blank">Shooting Tracker</a>
+    <a href="http://splunk4good.com/" target="_blank">Splunk4Good</a>
+    <a href="http://splunk.com/" target="_blank">Splunk</a>
+  </collection>
+</nav>

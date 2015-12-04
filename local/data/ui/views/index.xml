@@ -1,0 +1,308 @@
+<form script="autodiscover.js">
+  <label>Mass Shooting Tracker</label>
+  <description>Reddit users have compiled datasets detailing shootings in the US since 2013 on http://shootingtracker.com/ . This Splunk app aims to provide everyone - from journalists to students - with an easy way to explore and better understand the data.</description>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2013" | addcoltotals</query>
+          <earliest>1356998401</earliest>
+          <latest>1388534340</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">0</option>
+        <option name="showTrendIndicator">0</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="rangeColors">["0xd93f3c","0xd93f3c"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">people shot dead in 2013</option>
+        <option name="linkView">search</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">bubble</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2014" | addcoltotals</query>
+          <earliest>1388534401</earliest>
+          <latest>1420070340</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">0</option>
+        <option name="showTrendIndicator">0</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="rangeColors">["0xd93f3c","0xd93f3c"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">people shot dead in 2014</option>
+        <option name="linkView">search</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">bubble</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>index=shooting_tracker_master | timechart sum(killed) AS "No. People Killed in 2015" | addcoltotals</query>
+          <earliest>1420070401</earliest>
+          <latest>1451606340</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">0</option>
+        <option name="showTrendIndicator">0</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="rangeColors">["0xd93f3c","0xd93f3c"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">people shot dead in 2015... lets hope that's it!</option>
+        <option name="linkView">search</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">bubble</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <search>
+          <query>index=shooting_tracker_master | timechart span=1d sum(killed) AS "No. People Killed"</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="numberPrecision">0</option>
+        <option name="showSparkline">0</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x65a637","0xd93f3c"]</option>
+        <option name="rangeValues">[1]</option>
+        <option name="trendInterval">-24h</option>
+        <option name="underLabel">people killed today</option>
+        <option name="linkView">search</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Shootings Timeline</title>
+      <chart>
+        <search ref="shootings_time"></search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">1</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.overlayFields">"No. People Killed","No. People Wounded"</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.axisTitleX.text">Week</option>
+        <option name="charting.axisTitleY2.text">No. of Dead / Wounded</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Shootings Map</title>
+      <input type="radio" token="outcomeToken0" searchWhenChanged="true">
+        <label></label>
+        <choice value="sum(total_involved)">People killed and wounded</choice>
+        <choice value="sum(killed)">People killed</choice>
+        <choice value="sum(wounded)">People wounded</choice>
+        <default>sum(total_involved)</default>
+        <initialValue>sum(total_involved)</initialValue>
+      </input>
+      <input type="time" token="timeToken1">
+        <label></label>
+        <default>
+          <earliest>0</earliest>
+          <latest></latest>
+        </default>
+      </input>
+      <map>
+        <search>
+          <query>index=shooting_tracker_master | eval total_involved=wounded+killed | stats $outcomeToken0$ AS "People Killed" by state_long | geom geo_us_states featureIdField="state_long"</query>
+          <earliest>$timeToken1.earliest$</earliest>
+          <latest>$timeToken1.latest$</latest>
+        </search>
+        <option name="mapping.choroplethLayer.colorBins">9</option>
+        <option name="mapping.choroplethLayer.colorMode">auto</option>
+        <option name="mapping.choroplethLayer.maximumColor">0xDB5800</option>
+        <option name="mapping.choroplethLayer.minimumColor">0x2F25BA</option>
+        <option name="mapping.choroplethLayer.neutralPoint">0</option>
+        <option name="mapping.choroplethLayer.shapeOpacity">0.75</option>
+        <option name="mapping.choroplethLayer.showBorder">1</option>
+        <option name="mapping.data.maxClusters">100</option>
+        <option name="mapping.drilldown">all</option>
+        <option name="mapping.map.center">(35.17,-96.9)</option>
+        <option name="mapping.map.panning">true</option>
+        <option name="mapping.map.scrollZoom">false</option>
+        <option name="mapping.map.zoom">4</option>
+        <option name="mapping.markerLayer.markerMaxSize">50</option>
+        <option name="mapping.markerLayer.markerMinSize">10</option>
+        <option name="mapping.markerLayer.markerOpacity">0.8</option>
+        <option name="mapping.showTiles">1</option>
+        <option name="mapping.tileLayer.maxZoom">7</option>
+        <option name="mapping.tileLayer.minZoom">0</option>
+        <option name="mapping.tileLayer.tileOpacity">1</option>
+        <option name="mapping.type">choropleth</option>
+        <option name="drilldown">all</option>
+      </map>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Data Explorer</title>
+      <input type="dropdown" token="stateToken0" searchWhenChanged="true">
+        <label></label>
+        <choice value="*">All</choice>
+        <search>
+          <query>index=shooting_tracker_master sourcetype="csv-shooting_tracker" | dedup state | fields state</query>
+        </search>
+        <fieldForLabel>state</fieldForLabel>
+        <fieldForValue>state</fieldForValue>
+        <default>*</default>
+        <initialValue>*</initialValue>
+      </input>
+      <input type="time" token="timeToken2">
+        <label></label>
+        <default>
+          <earliest>0</earliest>
+          <latest></latest>
+        </default>
+      </input>
+      <table>
+        <search>
+          <query>index=shooting_tracker_master sourcetype="csv-shooting_tracker" state=$stateToken0$ | eval "Name of Shooter(s)"="Name Hidden", Date=strftime(_time, "%d/%m/%Y")  | stats sum(killed) AS "People Killed" sum(wounded) AS "People Wounded" by "Name of Shooter(s)", date, state_long, Date, city | rename state_long AS State, city AS City | table Date, State, City "Name of Shooter(s)", "People Killed", "People Wounded" | sort -"People Killed"</query>
+          <earliest>$timeToken2.earliest$</earliest>
+          <latest>$timeToken2.latest$</latest>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">cell</option>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+  <!-- TO DO
+  <row>
+    <panel>
+<search id="basesearch">
+    <query>index=shooting_tracker_master | timechart span=1d count(killings)</query>
+    <earliest>0</earliest>
+    <latest>now</latest>
+  </search>
+  <search id="heatmap_success_search" base="basesearch">
+    <query></query>
+  </search>
+      <title>Calendar of Killings</title>
+      <html>
+                <div id="heatmap_" class="splunk-view" data-require="app/s4g-shooting_tracker/components/calendarheatmap/calendarheatmap" data-options="{                         &quot;managerid&quot;: &quot;heatmap_success_search&quot;,                         &quot;domain&quot;: &quot;month&quot;,                         &quot;subDomain&quot;: &quot;day&quot;                     }">
+                </div>
+            </html>
+    </panel>
+</row>
+-->
+</form>
