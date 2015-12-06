@@ -1,52 +1,52 @@
-state,State,Median_Annual_Household_Income
-AL,Alabama,42278
-AK,Alaska,67629
-AZ,Arizona,49254
-AR,Arkansas,44922
-CA,California,60487
-CO,Colorado,60940
-CT,Connecticut,70161
-DE,Delaware,57522
-DC,District of Columbia,68277
-FL,Florida,46140
-GA,Georgia,49555
-HI,Hawaii,71223
-ID,Idaho,53438
-IL,Illinois,54916
-IN,Indiana,48060
-IA,Iowa,57810
-KS,Kansas,53444
-KY,Kentucky,42786
-LA,Louisiana,42406
-ME,Maine,51710
-MT,Maryland,76165
-NE,Massachusetts,63151
-NV,Michigan,52005
-NH,Minnesota,67244
-NJ,Mississippi,35521
-NM,Missouri,56630
-NY,Montana,51102
-NC,Nebraska,56870
-ND,Nevada,49875
-OH,New Hampshire,73397
-OK,New Jersey,65243
-OR,New Mexico,46686
-MD,New York,54310
-MA,North Carolina,46784
-MI,North Dakota,60730
-MN,Ohio,49644
-MS,Oklahoma,47199
-MO,Oregon,58875
-PA,Pennsylvania,55173
-RI,Rhode Island,58633
-SC,South Carolina,44929
-SD,South Dakota,53053
-TN,Tennessee,43716
-TX,Texas,53875
-UT,Utah,63383
-VT,Vermont,60708
-VA,Virginia,66155
-WA,Washington,59068
-WV,West Virginia,39552
-WI,Wisconsin,58080
+state,state_long,median_annual_household_income
 WY,Wyoming,55690
+WI,Wisconsin,58080
+WV,West Virginia,39552
+WA,Washington,59068
+VA,Virginia,66155
+VT,Vermont,60708
+UT,Utah,63383
+TX,Texas,53875
+TN,Tennessee,43716
+SD,South Dakota,53053
+SC,South Carolina,44929
+RI,Rhode Island,58633
+PA,Pennsylvania,55173
+OR,Oregon,58875
+OK,Oklahoma,47199
+OH,Ohio,49644
+ND,North Dakota,60730
+NC,North Carolina,46784
+NY,New York,54310
+NM,New Mexico,46686
+NJ,New Jersey,65243
+NH,New Hampshire,73397
+NV,Nevada,49875
+NE,Nebraska,56870
+MT,Montana,51102
+MO,Missouri,56630
+MS,Mississippi,35521
+MN,Minnesota,67244
+MI,Michigan,52005
+MA,Massachusetts,63151
+MD,Maryland,76165
+ME,Maine,51710
+LA,Louisiana,42406
+KY,Kentucky,42786
+KS,Kansas,53444
+IA,Iowa,57810
+IN,Indiana,48060
+IL,Illinois,54916
+ID,Idaho,53438
+HI,Hawaii,71223
+GA,Georgia,49555
+FL,Florida,46140
+DC,District of Columbia,68277
+DE,Delaware,57522
+CT,Connecticut,70161
+CO,Colorado,60940
+CA,California,60487
+AR,Arkansas,44922
+AZ,Arizona,49254
+AK,Alaska,67629
+AL,Alabama,42278

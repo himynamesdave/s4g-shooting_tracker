@@ -1,7 +1,12 @@
 <nav search_view="search" color="#e53f3d">
-  <view name="index" default='true' />
+  
+  <view name="shooter_tracker" default='true' />
+  <view name="mother_jones" />
+  <view name="worldwide_gun_stats" />
   <view name="gun_control" />
+  <view name="motherjones_vs_shootingtracker" />
   <collection label="About">
+  	<a href="https://github.com/himynamesdave/s4g-shooting_tracker" target="_blank">App Codebase</a>
     <a href="http://shootingtracker.com/" target="_blank">Shooting Tracker</a>
     <a href="http://splunk4good.com/" target="_blank">Splunk4Good</a>
     <a href="http://splunk.com/" target="_blank">Splunk</a>

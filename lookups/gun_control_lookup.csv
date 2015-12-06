@@ -1,52 +1,52 @@
-state,gun_related_deaths_100k,permit_license_purchase_handgun,backround_checks_handgun,require_register_weapon,stand_your_ground,difficulty_concealed_carry,difficulty_open_carry,waiting_period_days
-HI,2.5,yes,yes,yes,no,difficult,difficult,14
-MA,2.9,yes,yes,no,no,difficult,difficult,0
-NY,4.1,yes,yes,yes,no,difficult,prohibited,0
-CT,4.3,yes,yes,no,no,difficult,moderate,0
-RI,5.2,yes,yes,no,no,difficult,moderate,7
-NJ,5.7,yes,yes,no,no,difficult,difficult,7
-NH,6.2,no,no,no,yes,moderate,no permit required,0
-CA,7.5,yes,yes,yes,no,difficult,prohibited,10
-MN,7.6,no,no,no,no,moderate,moderate,7
-IA,8,yes,yes,no,no,moderate,moderate,3
-WA,8.4,no,yes,no,no,easy,no permit required,0
-IL,8.4,yes,yes,no,no,moderate,prohibited,3
-DC,8.5,yes,yes,yes,no,difficult,prohibited,10
-NE,9,yes,yes,no,no,easy,no permit required,0
-VT,9.1,no,no,no,no,no permit required,no permit required,0
-MD,9.4,yes,yes,yes,no,difficult,difficult,7
-SD,9.5,no,no,no,yes,moderate,no permit required,0
-WI,9.6,no,no,no,yes,easy,no permit required,0
-VA,10,no,no,no,no,moderate,no permit required,0
-DE,10.3,no,yes,no,no,difficult,no permit required,0
-TX,10.5,no,no,no,yes,easy,moderate,0
-ME,10.6,no,no,no,no,no permit required,no permit required,0
-OH,10.9,no,no,no,yes,easy,no permit required,0
-OR,10.9,no,yes,no,no,moderate,no permit required,0
-PA,11,no,yes,no,yes,moderate,no permit required,0
-KS,11.3,no,no,no,yes,no permit required,no permit required,0
-CO,11.4,no,yes,no,no,moderate,no permit required,0
-FL,11.8,no,no,no,yes,easy,prohibited,3
-ND,11.8,no,no,no,yes,moderate,no permit required,0
-MI,11.9,yes,yes,no,yes,easy,no permit required,0
-NC,12.1,yes,yes,no,yes,easy,no permit required,0
-UT,12.4,no,no,no,yes,moderate,moderate,0
-GA,12.5,no,no,no,yes,moderate,moderate,0
-IN,12.7,no,no,no,yes,moderate,moderate,0
-KY,13.6,no,no,no,yes,easy,no permit required,0
-NV,13.7,no,no,no,yes,easy,no permit required,0
-WV,13.9,no,no,no,yes,easy,no permit required,0
-AZ,13.9,no,no,no,yes,no permit required,no permit required,0
-ID,13.9,no,no,no,no,easy,no permit required,0
-MO,14.3,no,no,no,yes,moderate,moderate,0
-NM,14.7,no,no,no,no,easy,no permit required,0
-SC,14.9,no,no,no,yes,easy,prohibited,0
-TN,15.3,no,no,no,yes,easy,moderate,0
-MT,16,no,no,no,yes,moderate,no permit required,0
-OK,16.4,no,no,no,yes,easy,moderate,0
-WY,16.7,no,no,no,no,no permit required,no permit required,0
-AR,16.7,no,no,no,yes,moderate,no permit required,0
-AL,17.5,no,no,no,yes,moderate,no permit required,0
-MS,17.7,no,no,no,yes,easy,no permit required,0
-LA,19.1,no,no,no,yes,easy,no permit required,0
-AK,19.8,no,no,no,yes,no permit required,no permit required,0
+state,state_long,gun_related_deaths_100k,permit_license_purchase_handgun,backround_checks_handgun,require_register_weapon,stand_your_ground,difficulty_concealed_carry,difficulty_open_carry,waiting_period_days
+AK,Alaska,19.8,no,no,no,yes,no permit required,no permit required,0
+AL,Alabama,17.5,no,no,no,yes,moderate,no permit required,0
+AR,Arkansas,16.7,no,no,no,yes,moderate,no permit required,0
+AZ,Arizona,13.9,no,no,no,yes,no permit required,no permit required,0
+CA,California,7.5,yes,yes,yes,no,difficult,prohibited,10
+CO,Colorado,11.4,no,yes,no,no,moderate,no permit required,0
+CT,Connecticut,4.3,yes,yes,no,no,difficult,moderate,0
+DC,District of Columbia,8.5,yes,yes,yes,no,difficult,prohibited,10
+DE,Delaware,10.3,no,yes,no,no,difficult,no permit required,0
+FL,Florida,11.8,no,no,no,yes,easy,prohibited,3
+GA,Georgia,12.5,no,no,no,yes,moderate,moderate,0
+HI,Hawaii,2.5,yes,yes,yes,no,difficult,difficult,14
+IA,Iowa,8,yes,yes,no,no,moderate,moderate,3
+ID,Idaho,13.9,no,no,no,no,easy,no permit required,0
+IL,Illinois,8.4,yes,yes,no,no,moderate,prohibited,3
+IN,Indiana,12.7,no,no,no,yes,moderate,moderate,0
+KS,Kansas,11.3,no,no,no,yes,no permit required,no permit required,0
+KY,Kentucky,13.6,no,no,no,yes,easy,no permit required,0
+LA,Louisiana,19.1,no,no,no,yes,easy,no permit required,0
+MA,Massachusetts,2.9,yes,yes,no,no,difficult,difficult,0
+MD,Maryland,9.4,yes,yes,yes,no,difficult,difficult,7
+ME,Maine,10.6,no,no,no,no,no permit required,no permit required,0
+MI,Michigan,11.9,yes,yes,no,yes,easy,no permit required,0
+MN,Minnesota,7.6,no,no,no,no,moderate,moderate,7
+MO,Missouri,14.3,no,no,no,yes,moderate,moderate,0
+MS,Mississippi,17.7,no,no,no,yes,easy,no permit required,0
+MT,Montana,16,no,no,no,yes,moderate,no permit required,0
+NC,North Carolina,12.1,yes,yes,no,yes,easy,no permit required,0
+ND,North Dakota,11.8,no,no,no,yes,moderate,no permit required,0
+NE,Nebraska,9,yes,yes,no,no,easy,no permit required,0
+NH,New Hampshire,6.2,no,no,no,yes,moderate,no permit required,0
+NJ,New Jersey,5.7,yes,yes,no,no,difficult,difficult,7
+NM,New Mexico,14.7,no,no,no,no,easy,no permit required,0
+NV,Nevada,13.7,no,no,no,yes,easy,no permit required,0
+NY,New York,4.1,yes,yes,yes,no,difficult,prohibited,0
+OH,Ohio,10.9,no,no,no,yes,easy,no permit required,0
+OK,Oklahoma,16.4,no,no,no,yes,easy,moderate,0
+OR,Oregon,10.9,no,yes,no,no,moderate,no permit required,0
+PA,Pennsylvania,11,no,yes,no,yes,moderate,no permit required,0
+RI,Rhode Island,5.2,yes,yes,no,no,difficult,moderate,7
+SC,South Carolina,14.9,no,no,no,yes,easy,prohibited,0
+SD,South Dakota,9.5,no,no,no,yes,moderate,no permit required,0
+TN,Tennessee,15.3,no,no,no,yes,easy,moderate,0
+TX,Texas,10.5,no,no,no,yes,easy,moderate,0
+UT,Utah,12.4,no,no,no,yes,moderate,moderate,0
+VA,Virginia,10,no,no,no,no,moderate,no permit required,0
+VT,Vermont,9.1,no,no,no,no,no permit required,no permit required,0
+WA,Washington,8.4,no,yes,no,no,easy,no permit required,0
+WI,Wisconsin,9.6,no,no,no,yes,easy,no permit required,0
+WV,West Virginia,13.9,no,no,no,yes,easy,no permit required,0
+WY,Wyoming,16.7,no,no,no,no,no permit required,no permit required,0

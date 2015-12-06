@@ -1,133 +1,30 @@
-[app/ui]
+[views/mother_jones]
 version = 6.3.0
-modtime = 1449184311.901145000
+modtime = 1449415180.821066000
 
-[app/launcher]
+[views/shooter_tracker]
 version = 6.3.0
-modtime = 1449184311.905107000
+modtime = 1449414471.821329000
 
-[props/csv-shooting_tracker]
-owner = dgreenwood
+[views/motherjones_vs_shootingtracker]
+owner = admin
 version = 6.3.0
-modtime = 1449178433.486222000
-
-[inputs/monitor%3A%2F%2F%2Fopt%2Fdata%2Fmass_shootings%2Fcsv]
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449179233.272512000
-
-[views/index]
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449306604.822832000
-
-[indexes/shooting_tracker_master]
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449179134.919976000
-
-[props/csv-shooting_tracker/EXTRACT-state]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449181903.498379000
-
-[lookups/states_lookup.csv]
-export = none
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449182243.582912000
+modtime = 1449415543.110083000
 
 [nav/default]
 version = 6.3.0
-modtime = 1449238041.385145000
+modtime = 1449414578.113244000
 
-[app/package/check_for_updates]
-version = 6.3.0
-modtime = 1449184311.906858000
-
-[savedsearches/shootings_timeline]
-export = none
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449185751.431581000
-
-[savedsearches/shootings_timechart]
-export = none
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449185832.902025000
-
-[lookups/state_population.csv]
-export = none
-owner = dgreenwood
-version = 6.3.0
-modtime = 1449219545.461492000
-
-[lookups/states_population.csv]
-access = read : [ * ], write : [ admin, power ]
-export = none
-owner = nobody
-version = 6.3.0
-modtime = 1449221688.692199000
-
-[transforms/states_lookup]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449221718.285283000
-
-[transforms/state_population_lookup]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449221752.524779000
-
-[props/csv-shooting_tracker/LOOKUP-state_population_lookup]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449221850.943743000
-
-[props/csv-shooting_tracker/LOOKUP-states_lookup]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449221882.004783000
-
-[savedsearches/shootings_time]
-access = read : [ * ], write : [ admin, power ]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449264322.592612000
-
-[props/csv-shooting_tracker/EXTRACT-city]
+[props/csv-mother_jones/EXTRACT-state_long]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 6.3.0
-modtime = 1449230173.481189000
+modtime = 1449414674.361121000
 
-[transforms/gun_control_lookup]
+[props/csv-mother_jones/EXTRACT-city]
+access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 6.3.0
-modtime = 1449237641.997890000
-
-[props/csv-shooting_tracker/LOOKUP-gun_control_lookup]
-export = none
-owner = admin
-version = 6.3.0
-modtime = 1449237768.284369000
-
-[views/gun_control]
-owner = admin
-version = 6.3.0
-modtime = 1449239701.502226000
-
-[views/mother_jones]
-owner = admin
-version = 6.3.0
-modtime = 1449264409.514740000
+modtime = 1449414765.325112000
