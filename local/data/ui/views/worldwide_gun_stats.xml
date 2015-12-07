@@ -47,8 +47,8 @@
         <choice value="search number_of_homicides_by_firearm =&quot;*&quot; | stats values(number_of_homicides_by_firearm) AS &quot;Number of homicides by firearm&quot; by country">Number of homicides by firearm</choice>
         <choice value="search homicide_by_firearm_rate_100k=&quot;*&quot; | stats values(homicide_by_firearm_rate_100k) AS &quot;Homicide by firearm rate per 100,000 pop&quot; by country">Homicide by firearm rate per 100,000 pop</choice>
         <choice value="stats values(pc_of_homicides_by_firearm) AS &quot;% of homicides by firearm&quot; by country">% of homicides by firearm</choice>
-        <default>search average_total_all_civilian_firearms="*" | stats values(average_total_all_civilian_firearms) AS "Average total all civilian firearms" by country</default>
-        <initialValue>search average_total_all_civilian_firearms="*" | stats values(average_total_all_civilian_firearms) AS "Average total all civilian firearms" by country</initialValue>
+        <default>search homicide_by_firearm_rate_100k="*" | stats values(homicide_by_firearm_rate_100k) AS "Homicide by firearm rate per 100,000 pop" by country</default>
+        <initialValue>search homicide_by_firearm_rate_100k="*" | stats values(homicide_by_firearm_rate_100k) AS "Homicide by firearm rate per 100,000 pop" by country</initialValue>
       </input>
       <map>
         <search>

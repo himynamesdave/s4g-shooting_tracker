@@ -6,6 +6,7 @@
   <view name="gun_control" />
   <view name="motherjones_vs_shootingtracker" />
   <collection label="About">
+    <view name="methodology" />
   	<a href="https://github.com/himynamesdave/s4g-shooting_tracker" target="_blank">App Codebase</a>
     <a href="http://shootingtracker.com/" target="_blank">Shooting Tracker</a>
     <a href="http://splunk4good.com/" target="_blank">Splunk4Good</a>

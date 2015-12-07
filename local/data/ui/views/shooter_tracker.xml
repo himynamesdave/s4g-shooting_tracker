@@ -1,6 +1,6 @@
 <form script="autodiscover.js, table_drilldown_url_field.js">
   <label>Shooting Tracker</label>
-  <description>Reddit users have compiled datasets detailing shootings in the US since 2013 on http://shootingtracker.com/ . This Splunk app aims to provide everyone - from journalists to students - with an easy way to explore and better understand the data.</description>
+  <description>Reddit users have compiled datasets detailing shootings in the US since 2013 on http://shootingtracker.com/ .</description>
   <!-- TO DO
   <row>
     <panel>
@@ -268,7 +268,6 @@
       <input type="radio" token="populationAdjToken0" searchWhenChanged="true">
         <label></label>
         <choice value="*">Actual</choice>
-        <choice value="eval pop_adj=(people/population)*100 | fields pop_adj, state_long">Population</choice>
         <default>*</default>
         <initialValue>*</initialValue>
       </input>
@@ -418,7 +417,7 @@
       </input>
       <table id="link">
         <search>
-          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" state="*" city="*" | eval "Name of Shooter(s)"="Name Hidden", Date=strftime(_time, "%d/%m/%Y"), Article="Link to Article"  | stats sum(killed) AS "People Killed" sum(wounded) AS "People Wounded" by "Name of Shooter(s)", date, state_long, Date, city, Article, article1, permit_license_purchase_handgun | rename state_long AS State, city AS City, permit_license_purchase_handgun AS "Permit or License Required to Purchase Handgun" | table Date, State, City, "Permit or License Required to Purchase Handgun", "Name of Shooter(s)", "People Killed", "People Wounded", "Article" | sort -"People Killed"</query>
+          <query>index=s4g-shootings sourcetype="csv-shooting_tracker" state="*" city="*" | eval "Name of Shooter(s)"="Name Hidden", Date=strftime(_time, "%d/%m/%Y"), Article="Link to Article"  | stats sum(killed) AS "People Killed" sum(wounded) AS "People Wounded" by "Name of Shooter(s)", date, state_long, Date, city, Article, article1 | rename state_long AS State, city AS City | table Date, State, City, "Name of Shooter(s)", "People Killed", "People Wounded", "Article" | sort -"People Killed"</query>
           <earliest>$timeToken2.earliest$</earliest>
           <latest>$timeToken2.latest$</latest>
         </search>

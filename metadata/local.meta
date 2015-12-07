@@ -1,19 +1,19 @@
 [views/mother_jones]
 version = 6.3.0
-modtime = 1449415180.821066000
+modtime = 1449478234.391802000
 
 [views/shooter_tracker]
 version = 6.3.0
-modtime = 1449414471.821329000
+modtime = 1449479431.452691000
 
 [views/motherjones_vs_shootingtracker]
 owner = admin
 version = 6.3.0
-modtime = 1449415543.110083000
+modtime = 1449475896.869567000
 
 [nav/default]
 version = 6.3.0
-modtime = 1449414578.113244000
+modtime = 1449476681.227388000
 
 [props/csv-mother_jones/EXTRACT-state_long]
 access = read : [ * ], write : [ admin ]
@@ -28,3 +28,26 @@ export = none
 owner = admin
 version = 6.3.0
 modtime = 1449414765.325112000
+
+[props/csv-mother_jones/LOOKUP-mj_weapon_categories_lookup]
+version = 6.3.0
+modtime = 1449433119.985858000
+
+[props/host%3A%3As4g-shootings/FIELDALIAS-killed_alias]
+export = none
+owner = admin
+version = 6.3.0
+modtime = 1449475050.648712000
+
+[views/methodology]
+owner = admin
+version = 6.3.0
+modtime = 1449476643.188246000
+
+[views/gun_control]
+version = 6.3.0
+modtime = 1449481727.776260000
+
+[views/worldwide_gun_stats]
+version = 6.3.0
+modtime = 1449479773.955076000

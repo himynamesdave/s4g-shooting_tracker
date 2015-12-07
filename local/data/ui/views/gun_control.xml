@@ -1,3 +1,84 @@
-<dashboard>
+<form>
   <label>Gun Control</label>
-</dashboard>
+  <row>
+    <panel>
+      <title>Map Explorer</title>
+      <input type="dropdown" token="mapToken0" searchWhenChanged="true">
+        <label></label>
+        <choice value="stats values(gun_related_deaths_100k) AS &quot;Gun-related deaths per 100k (2013 age-adjusted rates)&quot; by state_long">Gun-related deaths per 100k (2013 age-adjusted rates)</choice>
+        <choice value="stats values(permit_license_purchase_handgun) AS &quot;Is a permit or license required to purchase a handgun?&quot; by state_long">Is a permit or license required to purchase a handgun?</choice>
+        <choice value="stats values(backround_checks_handgun) AS &quot;Are background check on handguns extended to private sales (gun shows, online sales)?&quot; by state_long">Are background check on handguns extended to private sales (gun shows, online sales)?</choice>
+        <choice value="stats values(require_register_weapon) AS &quot;Are handgun owners required to register or report their weapons?&quot; by state_long">Are handgun owners required to register or report their weapons?</choice>
+        <choice value="stats values(stand_your_ground) AS &quot;Does some form of 'stand your ground' law exist? (Beyond Castle Doctrine)&quot; by state_long">Does some form of 'stand your ground' law exist? (Beyond Castle Doctrine)</choice>
+        <choice value="stats values(difficulty_concealed_carry) AS &quot;How difficult is it, generally, to obtain a concealed carry permit?&quot; by state_long">How difficult is it, generally, to obtain a concealed carry permit?</choice>
+        <choice value="stats values(difficulty_open_carry) AS &quot;How difficult is it, generally, to obtain a open carry permit?&quot; by state_long">How difficult is it, generally, to obtain a open carry permit?</choice>
+        <choice value="stats values(waiting_period_days) AS &quot;How long, in days, is the waiting period for handguns?&quot; by state_long">How long, in days, is the waiting period for handguns?</choice>
+        <default>stats values(gun_related_deaths_100k) AS "Gun-related deaths per 100k (2013 age-adjusted rates)" by state_long</default>
+        <initialValue>stats values(gun_related_deaths_100k) AS "Gun-related deaths per 100k (2013 age-adjusted rates)" by state_long</initialValue>
+      </input>
+      <map>
+        <search>
+          <query>| inputlookup gun_control_lookup.csv | $mapToken0$ | geom geo_us_states featureIdField="state_long"</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="mapping.choroplethLayer.colorBins">5</option>
+        <option name="mapping.choroplethLayer.colorMode">auto</option>
+        <option name="mapping.choroplethLayer.maximumColor">0xDB5800</option>
+        <option name="mapping.choroplethLayer.minimumColor">0x2F25BA</option>
+        <option name="mapping.choroplethLayer.neutralPoint">0</option>
+        <option name="mapping.choroplethLayer.shapeOpacity">0.75</option>
+        <option name="mapping.choroplethLayer.showBorder">1</option>
+        <option name="mapping.data.maxClusters">100</option>
+        <option name="mapping.drilldown">all</option>
+        <option name="mapping.map.center">(45.71,-100.99)</option>
+        <option name="mapping.map.panning">true</option>
+        <option name="mapping.map.scrollZoom">false</option>
+        <option name="mapping.map.zoom">3</option>
+        <option name="mapping.markerLayer.markerMaxSize">50</option>
+        <option name="mapping.markerLayer.markerMinSize">10</option>
+        <option name="mapping.markerLayer.markerOpacity">0.8</option>
+        <option name="mapping.showTiles">1</option>
+        <option name="mapping.tileLayer.maxZoom">7</option>
+        <option name="mapping.tileLayer.minZoom">0</option>
+        <option name="mapping.tileLayer.tileOpacity">1</option>
+        <option name="mapping.type">choropleth</option>
+        <option name="drilldown">all</option>
+      </map>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>| inputlookup gun_control_lookup.csv | stats values(gun_related_deaths_100k) AS "Gun-related deaths per 100k (2013 age-adjusted rates)" by state_long | sort -"Gun-related deaths per 100k (2013 age-adjusted rates)"</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">none</option>
+      </chart>
+    </panel>
+  </row>
+</form>

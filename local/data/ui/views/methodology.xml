@@ -1,0 +1,11 @@
+<dashboard>
+  <label>Methodology</label>
+  <row>
+    <panel>
+      <html>
+      <h1>Let's put a little about the project here</h1>
+      <p>For this we can use the Readme</p>
+      </html>
+    </panel>
+  </row>
+</dashboard>
