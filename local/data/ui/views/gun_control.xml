@@ -2,7 +2,7 @@
   <label>Gun Control</label>
   <row>
     <panel>
-      <title>Map Explorer</title>
+      <title>Map Explorer 2013</title>
       <input type="dropdown" token="mapToken0" searchWhenChanged="true">
         <label></label>
         <choice value="stats values(gun_related_deaths_100k) AS &quot;Gun-related deaths per 100k (2013 age-adjusted rates)&quot; by state_long">Gun-related deaths per 100k (2013 age-adjusted rates)</choice>
@@ -49,6 +49,7 @@
   </row>
   <row>
     <panel>
+      <title>Gun Related Deaths in 2013</title>
       <chart>
         <search>
           <query>| inputlookup gun_control_lookup.csv | stats values(gun_related_deaths_100k) AS "Gun-related deaths per 100k (2013 age-adjusted rates)" by state_long | sort -"Gun-related deaths per 100k (2013 age-adjusted rates)"</query>
@@ -78,6 +79,41 @@
         <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
         <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
         <option name="charting.legend.placement">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Firearms Background Checks</title>
+      <chart>
+        <search>
+          <query>| inputlookup firearm_background_checks_lookup.csv | chart sum(firearm_background_checks) AS "Firearm Background Checks" by year</query>
+          <earliest>0</earliest>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">area</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.axisY.minimumNumber">7000000</option>
       </chart>
     </panel>
   </row>

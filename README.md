@@ -38,6 +38,7 @@ In the spirit of transparency you should be aware that:
 * [Kaiser Family Foundation](http://kff.org/other/state-indicator/firearms-death-rate-per-100000/#) - gun deaths / 100k (US) [2013]
 * [The Guardian](http://www.theguardian.com/news/datablog/2012/jul/22/gun-homicides-ownership-world-list#data) - Gun ownership / homicides (world) [2012]
 * [Demographic Data](http://demographicdata.org/facts-and-figures/gun-ownership-statistics/) - gun ownership + crime stats [2010 - 2013 misc]
+* [Governing via Plotly](https://plot.ly/~governing/81/firearm-background-checks/) - Background checks for firearms
 
 ## Installation
 
